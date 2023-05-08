@@ -1,12 +1,15 @@
 
-import './App.css';
+import './miCss.css';
+import imagen from './condorito.png';
 
 function App() {
-  return (
-    <div className="fondo">
-        <h1>CURSO DE REACT</h1> 
-    </div>
-  );
-}
+    let nombre = "Manchas";
+    return (
+        <div className="fondo">
+            <img src = {imagen} className = "condoro" alt="condorito"/>
+
+            <h1>Hola {nombre}</h1> 
+        </div>
+    );}
 
 export default App;
