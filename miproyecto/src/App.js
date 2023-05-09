@@ -3,15 +3,22 @@ import './App.css';
 import imagen from './condorito.png';
 
 function App() {
-    let nombre = {nombre:"Manchas",
-                    edad: 7};
+    let nombres = [
+        {
+            nombre:"Manchas",
+            edad: 7},
+        {
+            nombre:"Gato",
+            edad: 5
+        }
+    ];
     return (
         <div className="fondo">
             <img src = {imagen} className = "condoro" alt="condorito"/>
-            <h1>Edad = {nombre.edad}</h1> 
+            <h1>Edad = {nombres[1].nombre}</h1> 
         </div>
     );}
 
 
-    
+
 export default App;
