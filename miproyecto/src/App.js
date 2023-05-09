@@ -1,24 +1,20 @@
 
 import './App.css';
-import imagen from './condorito.png';
+
+import imagen_1 from './rey_sisebuto';
+import imagen_2 from './rey_leogivildo';
+import imagen_3 from './rey_atanagildo';
 
 function App() {
-    let nombres = [
-        {
-            nombre:"Manchas",
-            edad: 7},
-        {
-            nombre:"Gato",
-            edad: 5
-        }
-    ];
+    
     return (
         <div className="fondo">
-            <img src = {imagen} className = "condoro" alt="condorito"/>
-            <h1>Edad = {nombres[1].nombre}</h1> 
+            
+            <img src = {imagen_1} className = "rey" alt="condorito"/>
+            <img src = {imagen_2} className = "rey" alt="condorito"/>
+            <img src = {imagen_3} className = "rey" alt="condorito"/>
+    
         </div>
-    );}
-
-
-
+    );
+}
 export default App;
