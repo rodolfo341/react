@@ -11,21 +11,13 @@ function App() {
     const refCaja = useRef();
     const refRey = useRef();
     
-    function convertir() {
-        refCaja.current.innerHTML *= cambio;        
-    }
+    const convertir=()=> refCaja.current.innerHTML *= cambio;        
 
-    function incrementar(e)  {
-        e.target.innerHTML++; 
-    }
+    const incrementar=(e)=> e.target.innerHTML++; 
 
-    function cambiarRey (e) {
-        e.target.src = img_rey_2;
-    }
+    const cambiarRey =(e)=> e.target.src = img_rey_2;
 
-    function cambiaNum(e){
-        refCaja.current.innerHTML = e.target.value ;
-    }
+    const cambiaNum=(e)=> refCaja.current.innerHTML = e.target.value ;
 
     return (
         <>
