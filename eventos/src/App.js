@@ -23,6 +23,10 @@ function App() {
         e.target.src = img_rey_2;
     }
 
+    function cambiaNum(e){
+        refCaja.current.innerHTML = e.target.value ;
+    }
+
     return (
         <>
             <div ref={refCaja}
@@ -38,7 +42,7 @@ function App() {
                 <img onClick={cambiarRey} src = {img_rey_1} alt="#"/> 
             </div>
             
-            <input className="cmpo"/>
+            <input onChange={cambiaNum} className="cmpo"/>
         </>    
     );
 }
