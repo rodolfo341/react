@@ -1,8 +1,20 @@
 
+.container {
+    margin-top: 20px;
+    display: flex;
+}
+
 .fondo {
-    background-color: violet;
-    color: #fff;
-    font-size: 2rem;
+    display: inline;
+    background-color:orange;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fondo div {
+    margin-top: 20px;
 }
 .condoro {
     width: 300px;

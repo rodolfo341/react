@@ -13,10 +13,17 @@ function App() {
     
     const convertir=()=> refCaja.current.innerHTML *= cambio;        
 
-    const incrementar=(e)=> e.target.innerHTML++; 
+    const incrementar=(e)=>{
+        e.target.innerHTML++;
+        if ( e.target.innerHTML >= 10) e.target.innerHTML = 1;
+    
+        ( e.target.innerHTML >=8 )?e.target.style.backgroundColor = "red":e.target.style.backgroundColor = "white";
+        
+    }
 
-    const cambiarRey =(e)=> e.target.src = img_rey_2;
-
+    const cambiarRey =(e)=> {
+        (e.target.src.includes("atanagildo"))?e.target.src = img_rey_1:e.target.src = img_rey_2;     
+    }
     const cambiaNum=(e)=> refCaja.current.innerHTML = e.target.value ;
 
     return (
