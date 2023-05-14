@@ -33,6 +33,7 @@ function App() {
                  onClick={incrementar}
             >
                 1
+                
             </div>
 
             <button onClick={convertir}>Aceptar</button>
