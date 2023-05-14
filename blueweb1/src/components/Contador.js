@@ -13,16 +13,16 @@ const Contador =()=> {
         setNumero(numero - 1); 
     }
 
-    const Reestablecer =()=> {
+    /*const Reestablecer =()=> {
         setNumero(numero = 0 ); 
-    }
-    
+    }*/
+   
     return (
         <Fragment>
             <h1>Contador = {numero}</h1>
             <button onClick={Aumentar}>Aumentar</button>
             <button onClick={Disminuir}>Disminuir</button>
-            <button onClick={Reestablecer}>Reestablecer</button>
+            {/*<button onClick={Reestablecer}>Reestablecer</button>*/}
         </Fragment>
     );
 }
